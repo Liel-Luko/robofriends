@@ -1,0 +1,24 @@
+import React from 'react';
+import Card from './Card';
+
+const CardList = ({robots}) => {
+    if(false)
+    {throw new Error('Noooooooooooooooo')}
+    return (
+        <div>
+            {
+            robots.map((user, i) => {
+                return (
+                    <Card 
+                        key={robots[i].id}
+                        id={robots[i].id} 
+                        name={robots[i].username} 
+                        email={robots[i].email}/>
+                );
+            })
+        }
+        </div>
+    );
+}
+
+export default CardList;
